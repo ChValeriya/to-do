@@ -14,7 +14,7 @@ export default function App() {
         <Route exact path="/">
           <Main allPosts={{posts, setPosts}} post={{currentPost, setCurrentPost}} />
         </Route>
-        <Route exact path="/task">
+        <Route exact path="/:id">
           <Task post={currentPost}/>
         </Route>
         <Route path="*">

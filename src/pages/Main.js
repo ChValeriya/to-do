@@ -26,7 +26,7 @@ const Main = ({allPosts, post}) => {
     if(currentEl === 'card'|| paretEl === 'card') {
       const postOpen = posts.filter(post => post.id === +id);
       setCurrentPost(postOpen[0]);
-      history.push("/task")
+      history.push(`/${id}`)
     }
   }
   
